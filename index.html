@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Auto-Refresh Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        .container {
+            margin-top: 50px;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h2>Auto-Refresh Page</h2>
+        <p>This page will automatically refresh every 2 seconds.</p>
+    </div>
+
+    <script>
+        // Define a function to reload the page
+        function autoRefresh() {
+            // Reload the page
+            location.reload();
+        }
+
+        // Call the autoRefresh function every 2 seconds (2000 milliseconds)
+        setInterval(autoRefresh, 2000);
+    </script>
+</body>
+
+</html>
